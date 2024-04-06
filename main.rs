@@ -50,4 +50,13 @@ fn main() {
     while yield
     Rust reserved words cannot be used when choosing identifier names for
     variables, functions, properties. */
+
+    // pemanggilan fungsi
+    cetak_diterminal(x, y)
+}
+
+
+// untuk nama fungsi convention yang digunakan anakan snake case misal tambah_data, simpan_data
+fn cetak_diterminal(x:i32, y:i32) {
+    print!("Nilai X >> {}\nNilai Y >> {}", x, y)
 }
