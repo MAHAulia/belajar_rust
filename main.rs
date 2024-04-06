@@ -230,6 +230,16 @@ fn main() {
     println!("INI >> {}", uppercase_nama_hewan);
     // println!("INI ERROR >> {}", nama_hewan); // ini bakalan error karena ownershipnya pindah ke var yang di fungsi uppercase
 
+    // Referrence mirip pointer di go
+    let makanan = String::from("ice cream 🍦");
+    let makanan2 = &makanan;
+    println!("Makanan 1 >> {}", makanan);
+    println!("Makanan 2 >> {}", makanan2);
+
+    let makanan_uppercase = uppercase_ref(&makanan);
+    println!("Makanan >> {}", makanan);
+    println!("Makanan Uppercase >> {}", makanan_uppercase);
+
 }
 
 
@@ -243,5 +253,9 @@ fn calculate(x:i32, y:i32) -> i32 {
 }
 
 fn uppercase(var: String) -> String {
+    var.to_uppercase()
+}
+
+fn uppercase_ref(var: &String) -> String {
     var.to_uppercase()
 }
