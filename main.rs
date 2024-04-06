@@ -273,6 +273,14 @@ fn main() {
     v3.push(5);
     println!("VECTOR 1 {}", v3[0]);
     println!("VECTOR 2 {}", v3[1]);
+
+    // multiple pattern, mirip kayak or
+    let test_data = 0;
+    match test_data {
+        0 | 5 => println!("0 | 5"),
+        1 => println!("1"),
+        _ => println!("-")
+    }
 }
 
 
