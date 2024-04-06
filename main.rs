@@ -215,6 +215,21 @@ fn main() {
         STATUS::OK => println!("STATUS OK"),
         STATUS::NOK => println!("STATUS NOT OK"),
     }
+
+
+    // Ownership
+    let nama = String::from("AULIA");
+    let namanya = nama;
+    // println!("NAMA : {}", nama); // error karena ownership di memorinya udah pindah ke variable namanya
+    println!("NAMANYA : {}", namanya);
+
+    let nama_hewan = String::from("kepiting 🦀");
+    println!("INI >> {}", nama_hewan);
+
+    let uppercase_nama_hewan = uppercase(nama_hewan);
+    println!("INI >> {}", uppercase_nama_hewan);
+    // println!("INI ERROR >> {}", nama_hewan); // ini bakalan error karena ownershipnya pindah ke var yang di fungsi uppercase
+
 }
 
 
@@ -225,4 +240,8 @@ fn cetak_diterminal(x:i32, y:i32) {
 
 fn calculate(x:i32, y:i32) -> i32 {
     x+y
+}
+
+fn uppercase(var: String) -> String {
+    var.to_uppercase()
 }
