@@ -257,7 +257,22 @@ fn main() {
 
     // utility::test_private(); // ini error karenamanggil private function
 
+    // super
     utility::counter::call_test();
+
+    // vector
+    let vector_name = vec![100, 200, 300];
+    println!("VECTOR 1 {}", vector_name[0]);
+    println!("VECTOR 2 {}", vector_name[2]);
+
+    let v2 = vec![10;4];
+    println!("VECTOR 1 {}", v2[0]);
+
+    let mut v3 = Vec::new();
+    v3.push(54);
+    v3.push(5);
+    println!("VECTOR 1 {}", v3[0]);
+    println!("VECTOR 2 {}", v3[1]);
 }
 
 
