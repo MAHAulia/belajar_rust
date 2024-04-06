@@ -85,6 +85,16 @@ fn main() {
     println!("2 * 4 = {}\n", 2 * 3 );
     println!("2 / 4 = {}\n", 2 / 3 );
     println!("2 % 4 = {}\n", 2 % 3 );
+
+    // Logical Operation
+    println!("true AND true = {}", true && true);
+    println!("true AND false = {}", true && false);
+    println!("false AND false = {}", false && false);
+    println!("true OR true = {}", true || true);
+    println!("true OR false = {}", true || false);
+    println!("false OR false = {}", false || false);
+    println!("NOT false = {}", !false);
+    println!("NOT true = {}", !true);
 }
 
 
