@@ -56,7 +56,21 @@ fn main() {
 
     // print hasil penjumlahn
     let jumlah = calculate(x, y);
-    print!("\n{} + {} = {}", x, y, jumlah)
+    print!("\n{} + {} = {}", x, y, jumlah);
+
+    // 3 Variable Binding
+    // mutable and imutable variable, by default variable di rust itu imutable
+    // imutable variable
+    let (d1, d2)= (500, 5000);
+    print!("\nD1 : {}\nD2 : {}", d1, d2);
+
+    // mutable varibale
+    let mut data1 = 100;
+    let mut data2 = 30;
+    data1 = data1 + 100;
+    data2 = data2 + 10;
+    println!("\nTotal Data 1 : {}", data1);
+    println!("Total Data 2 : {}\n", data2);
 }
 
 
