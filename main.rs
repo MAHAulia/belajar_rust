@@ -14,5 +14,10 @@ fn main() {
     println!("\n{}", title);
     println!("`{}`", counter);
 
-    
+    // Output format, digunakan untuk melakukan print data dengan passing variable
+    let x = 100;
+    let y = 200;
+    let z = 500;
+    println!("\n{}", x);
+    print!("Data 1 >> {}\nData 2 >> {}\n", y, z);
 }
