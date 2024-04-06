@@ -3,10 +3,10 @@ const NUM:i32 = 1000;
 
 /*fn main ini merupakan entri point untuk rust pertama kali dijalankan */
 fn main() {
-    // Print `Helo kepiting di terminal`
+    // 1. Print `Helo kepiting di terminal`
     println!("Hello Kepiting");
 
-    // Belajar Type Data
+    // 2. Belajar Type Data
     // Convention untuk penulisan variable menggunakan snake case
     let is_oke = "OK";
     println!("\nPrint OK >> {}", is_oke);
@@ -26,5 +26,11 @@ fn main() {
 
     // Constanta, digunakan untuk mendefinisikan constants
     println!("\nPRINT CONST >> {}", NUM);
+
+    // Convert type data
+    let variable1:f32 = 100.99;
+    let variable2:i32 = variable1 as i32;
+    println!("\n{}", variable1);
+    println!("{}", variable2);
     
 }
