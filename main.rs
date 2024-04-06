@@ -167,6 +167,10 @@ fn main() {
         println!("Looping ke >> {}", looping);
         looping += 1;
     }
+
+    // Tuples
+    let tupl = (10, 10.5, "coba");
+    print!("{} {} {}", tupl.0, tupl.1, tupl.2);
 }
 
 
