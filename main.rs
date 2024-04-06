@@ -147,6 +147,7 @@ fn main() {
     // 5 Loop
     let mut looping = 0;
 
+    // loop
     loop {
         println!("Looping ke : {}", looping);
          if looping == 4 {
@@ -155,6 +156,17 @@ fn main() {
          looping = looping + 1;
     }
     
+
+    // for statement
+    for data in 0..10 {
+        println!("DATA KE : {}", data);
+    }
+
+    // while statemnt
+    while  looping < 10 {
+        println!("Looping ke >> {}", looping);
+        looping += 1;
+    }
 }
 
 
