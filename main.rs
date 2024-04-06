@@ -170,7 +170,19 @@ fn main() {
 
     // Tuples
     let tupl = (10, 10.5, "coba");
-    print!("{} {} {}", tupl.0, tupl.1, tupl.2);
+    print!("{} {} {}\n", tupl.0, tupl.1, tupl.2);
+
+    // match
+    let databaru:i32 = 4;
+
+    match databaru {
+        1 => println!("SATU"),
+        2 => println!("DUA"),
+        3 => println!("TIGA"),
+        4 => println!("EMPAT"),
+        5 => println!("LIMA"),
+        _ => println!("DEFAULT"),
+    }
 }
 
 
