@@ -1,3 +1,7 @@
+use crate::util::str_to_uppercase;
+
+mod util;
+
 // consts didefiniskan di luar main
 const NUM: i32 = 1000;
 
@@ -247,6 +251,9 @@ fn main() {
     let number = 5;
     utility::counter::increament(number);
     utility::counter::decfrement(number);
+
+    // external file
+    str_to_uppercase(makanan);
 
 }
 
