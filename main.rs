@@ -198,6 +198,23 @@ fn main() {
 
     println!("NAMA : {}", pengunjung.nama);
     println!("USIA : {}", pengunjung.usia);
+
+    enum STATUS {
+        OK,
+        NOK,
+    }
+
+    let status = STATUS::OK;
+    let statusnok = STATUS::NOK;
+    match status {
+        STATUS::OK => println!("STATUS OK"),
+        STATUS::NOK => println!("STATUS NOT OK"),
+    }
+
+    match statusnok {
+        STATUS::OK => println!("STATUS OK"),
+        STATUS::NOK => println!("STATUS NOT OK"),
+    }
 }
 
 
