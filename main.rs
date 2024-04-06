@@ -314,6 +314,11 @@ fn main() {
     let obj2 = Square{long: 2.0, width: 3.0, height: 10.0};
     println!("Volume of Square>> {}", obj2.volume());
     println!("Wide of Square>> {}", obj2.wide());
+
+    // Drop, fungsi bawaan untuk decrement reference count, valuenya harus imutable agar bisa dikurangi
+    let football = Game{point: 1};
+    let basketball = Game{point: 2};
+    let socer = Game{point: 3};
 }
 
 
@@ -390,5 +395,15 @@ impl Calculate for Square {
 
     fn wide(&self) -> f32 {
         self.long * self.width
+    }
+}
+
+struct Game {
+    point: i32,
+}
+
+impl Drop for Game {
+    fn drop(&mut self) {
+        println!("The Winner #{}", self.point)
     }
 }
