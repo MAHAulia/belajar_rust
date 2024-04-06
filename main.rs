@@ -309,6 +309,11 @@ fn main() {
     // METHOD
     let obj = Circle{radius: 10.0};
     println!("AREA OF CIRCLE >> {}", obj.area());
+
+    // Trait ini kayak interface, kita buat trait dari struct lalu definisikan fun dalam trait, dan harus diimplement
+    let obj2 = Square{long: 2.0, width: 3.0, height: 10.0};
+    println!("Volume of Square>> {}", obj2.volume());
+    println!("Wide of Square>> {}", obj2.wide());
 }
 
 
@@ -365,4 +370,25 @@ impl Circle{
     fn area(&self) -> f32{
        std::f32::consts::PI * self.radius * self.radius
     } 
+}
+
+struct  Square {
+    long: f32,
+    width: f32,
+    height: f32,
+}
+
+trait Calculate {
+    fn volume(&self) -> f32;
+    fn wide(&self) -> f32;
+}
+
+impl Calculate for Square {
+    fn volume(&self) -> f32 {
+        self.long * self.width * self.height
+    }
+
+    fn wide(&self) -> f32 {
+        self.long * self.width
+    }
 }
