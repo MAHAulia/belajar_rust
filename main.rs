@@ -95,6 +95,16 @@ fn main() {
     println!("false OR false = {}", false || false);
     println!("NOT false = {}", !false);
     println!("NOT true = {}", !true);
+
+    // Comparsion
+    let xx:i32 = 100;
+    let yy:i32 = 200;
+    println!("xx is greater than yy : {}", xx > yy);
+    println!("xx is less than yy : {}", xx < yy);
+    println!("xx is unequal to yy : {}", xx != yy);
+    println!("xx is greater/equal to yy : {}", xx >= yy);
+    println!("xx is less/equal to yy : {}", xx <= yy);
+    println!("xx is completelyy equal to yy : {}", xx == yy);
 }
 
 
