@@ -114,8 +114,12 @@ fn main() {
 
     let mut arr2: [f32; 4] = [0.1, 0.2, 0.3, 0.4];
     arr2[2] = 10.5;
-    print!("0 =>{}, 1 =>{}, 2 =>{}, 3 =>{} ", arr2[0], arr2[1], arr2[2], arr2[3]);
+    print!("0 =>{}, 1 =>{}, 2 =>{}, 3 =>{} \n", arr2[0], arr2[1], arr2[2], arr2[3]);
 
+    // Slyce
+    let arrdata = [1,2,3,4,5,6,7];
+    let slc = &arrdata[2..5];
+    println!("{}", slc[0]);
     
 }
 
