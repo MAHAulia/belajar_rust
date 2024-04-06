@@ -143,6 +143,17 @@ fn main() {
     };
 
     println!("NOMOR : {}", nomor);
+
+    // 5 Loop
+    let mut looping = 0;
+
+    loop {
+        println!("Looping ke : {}", looping);
+         if looping == 4 {
+            break;
+         }
+         looping = looping + 1;
+    }
     
 }
 
