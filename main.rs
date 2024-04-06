@@ -255,6 +255,8 @@ fn main() {
     // external file
     str_to_uppercase(makanan);
 
+    // utility::test_private(); // ini error karenamanggil private function
+
 }
 
 
@@ -278,6 +280,10 @@ fn uppercase_ref(var: &String) -> String {
 mod utility {
     pub fn cetak_nama(var: &String) {
         println!("NAMA >> {}", var)
+    }
+
+    fn test_private() {
+        println!("INI PRIVATE FUNCTION");
     }
 
     pub mod counter {
