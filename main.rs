@@ -332,6 +332,12 @@ fn main() {
     }
     
     println!("LABEL >> {}", label);
+
+
+    // Assert
+    let e = 100;
+    assert!(e == 100);
+    println!("E == 100 ? {}", e == 100);
 }
 
 
