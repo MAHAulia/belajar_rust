@@ -52,11 +52,19 @@ fn main() {
     variables, functions, properties. */
 
     // pemanggilan fungsi
-    cetak_diterminal(x, y)
+    cetak_diterminal(x, y);
+
+    // print hasil penjumlahn
+    let jumlah = calculate(x, y);
+    print!("\n{} + {} = {}", x, y, jumlah)
 }
 
 
 // untuk nama fungsi convention yang digunakan anakan snake case misal tambah_data, simpan_data
 fn cetak_diterminal(x:i32, y:i32) {
-    print!("Nilai X >> {}\nNilai Y >> {}", x, y)
+    print!("Nilai X >> {}\nNilai Y >> {}", x, y);
+}
+
+fn calculate(x:i32, y:i32) -> i32 {
+    x+y
 }
