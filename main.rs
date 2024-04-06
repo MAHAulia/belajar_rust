@@ -240,6 +240,14 @@ fn main() {
     println!("Makanan >> {}", makanan);
     println!("Makanan Uppercase >> {}", makanan_uppercase);
 
+    // Module
+    utility::cetak_nama(&makanan);
+    
+    // EMBEDEN MODULE
+    let number = 5;
+    utility::counter::increament(number);
+    utility::counter::decfrement(number);
+
 }
 
 
@@ -258,4 +266,22 @@ fn uppercase(var: String) -> String {
 
 fn uppercase_ref(var: &String) -> String {
     var.to_uppercase()
+}
+
+mod utility {
+    pub fn cetak_nama(var: &String) {
+        println!("NAMA >> {}", var)
+    }
+
+    pub mod counter {
+        pub fn increament(var: i32){
+            println!("INCREMENT >> {}", var + 1);
+        }
+
+        pub fn decfrement(var: i32){
+            println!("DECREMENT >> {}", var - 1);
+        }
+            
+    }
+
 }
