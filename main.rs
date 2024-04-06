@@ -305,6 +305,10 @@ fn main() {
         Some(d) => println!("{}", d),
         None => print!("NONE")
     }
+
+    // METHOD
+    let obj = Circle{radius: 10.0};
+    println!("AREA OF CIRCLE >> {}", obj.area());
 }
 
 
@@ -351,4 +355,14 @@ mod utility {
             
     }
 
+}
+
+struct Circle {
+    radius: f32,
+}
+
+impl Circle{ 
+    fn area(&self) -> f32{
+       std::f32::consts::PI * self.radius * self.radius
+    } 
 }
