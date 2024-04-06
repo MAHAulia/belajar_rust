@@ -319,6 +319,19 @@ fn main() {
     let football = Game{point: 1};
     let basketball = Game{point: 2};
     let socer = Game{point: 3};
+
+    // Clousure
+    let hitung = |no:i32|{no+10};
+    println!("HITUNG >> {}", hitung(10));
+
+    let mut label = String::from("Berata 25");
+    {
+        let mut my_label = | satuan: char |{label.push(satuan)}; // closure
+        my_label('K'); 
+        my_label('g'); 
+    }
+    
+    println!("LABEL >> {}", label);
 }
 
 
