@@ -281,6 +281,15 @@ fn main() {
         1 => println!("1"),
         _ => println!("-")
     }
+
+    // range bissa dipake untuk or dalam kontek misalkan array
+    let z = 4;
+    match z {
+        // 2...5 => println!("2...5"), // range dengan tanda titi tiga kali (...) sudah deprecated
+        2..=5 => println!("2..=5"), // gunakan pattern ini sebagai pengganti ref -> https://doc.rust-lang.org/reference/patterns.html, https://stackoverflow.com/a/49834813/20927756
+        1 => println!("1"),
+        _ => println!("0")
+    }
 }
 
 
