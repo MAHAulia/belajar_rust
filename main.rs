@@ -298,6 +298,13 @@ fn main() {
         var @5..=10 => println!("{}", var),
         _ => println!("other")
     }
+
+    // GENERIC
+    let d: Option<i32> = Some(100);
+    match d {
+        Some(d) => println!("{}", d),
+        None => print!("NONE")
+    }
 }
 
 
