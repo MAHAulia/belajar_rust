@@ -120,6 +120,29 @@ fn main() {
     let arrdata = [1,2,3,4,5,6,7];
     let slc = &arrdata[2..5];
     println!("{}", slc[0]);
+
+    // 4 Control Flow
+    // if stetment
+    let nomor = 10;
+    if nomor == 10 {
+        println!("NILAINYA SEBULUH");
+    }
+
+    // Else if
+    if nomor > 10 {
+        println!("Lebih dari sebpuluh");
+    } else {
+        println!("kurang dari sepuluh");
+    }
+
+    // letif
+    let nomor = if true {
+        10000
+    } else {
+        500
+    };
+
+    println!("NOMOR : {}", nomor);
     
 }
 
