@@ -71,6 +71,13 @@ fn main() {
     data2 = data2 + 10;
     println!("\nTotal Data 1 : {}", data1);
     println!("Total Data 2 : {}\n", data2);
+
+    // String assigment
+    let say1 = "hello".to_string();
+    let say2 = String::from("hello 2");
+    let say3 = "hello 3";
+
+    print!("\nSay1:{}\nSay2:{}\nSay3:{}\n`", say1, say2, say3)
 }
 
 
