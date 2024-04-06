@@ -1,3 +1,6 @@
+// consts didefiniskan di luar main
+const NUM:i32 = 1000;
+
 /*fn main ini merupakan entri point untuk rust pertama kali dijalankan */
 fn main() {
     // Print `Helo kepiting di terminal`
@@ -20,4 +23,8 @@ fn main() {
     let z = 500;
     println!("\n{}", x);
     print!("Data 1 >> {}\nData 2 >> {}\n", y, z);
+
+    // Constanta, digunakan untuk mendefinisikan constants
+    println!("\nPRINT CONST >> {}", NUM);
+    
 }
