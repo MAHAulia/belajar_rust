@@ -77,7 +77,14 @@ fn main() {
     let say2 = String::from("hello 2");
     let say3 = "hello 3";
 
-    print!("\nSay1:{}\nSay2:{}\nSay3:{}\n`", say1, say2, say3)
+    print!("\nSay1:{}\nSay2:{}\nSay3:{}\n`", say1, say2, say3);
+
+    // Aritmatic Operation
+    println!("2 + 4 = {}\n", 2 + 3 );
+    println!("2 - 4 = {}\n", 2 - 3 );
+    println!("2 * 4 = {}\n", 2 * 3 );
+    println!("2 / 4 = {}\n", 2 / 3 );
+    println!("2 % 4 = {}\n", 2 % 3 );
 }
 
 
