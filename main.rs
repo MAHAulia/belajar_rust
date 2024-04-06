@@ -338,6 +338,35 @@ fn main() {
     let e = 100;
     assert!(e == 100);
     println!("E == 100 ? {}", e == 100);
+
+
+    /*Section Test
+    1. D. fn
+    2. tidak ada yang benar karena harusnya to_string() bukan to_String()
+    3. D. let
+    4. B. else
+    5. A. struct
+    6. C. mod
+    7. D. vec!
+    B. &self
+    9. A. as
+    10. D.from
+    11. C.loop
+    12. A.  enum
+    13. B. use
+    14. D. |
+    15. C. self
+    16. D. i32
+    17. B. []
+    18. A. ()
+    19. D. &s &String
+    20. C. super
+    21. D. @
+    22. D. |
+    23. B. i32 | bool | f64 | char
+    24. C. assert!
+    25.  */
+    
 }
 
 
