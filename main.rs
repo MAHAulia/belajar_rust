@@ -290,6 +290,14 @@ fn main() {
         1 => println!("1"),
         _ => println!("0")
     }
+
+    // binding a range
+    let c = 5;
+    match c {
+        // var @5...10 => println!("{}", var), // pattern ini deprecated
+        var @5..=10 => println!("{}", var),
+        _ => println!("other")
+    }
 }
 
 
