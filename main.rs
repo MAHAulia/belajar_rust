@@ -183,6 +183,21 @@ fn main() {
         5 => println!("LIMA"),
         _ => println!("DEFAULT"),
     }
+
+    // 5 Struct
+    // struct
+    struct Person {
+        nama: String,
+        usia: i32,
+    }   
+
+    let pengunjung = Person{
+        nama: String::from("Aulia"),
+        usia: 30,
+    };
+
+    println!("NAMA : {}", pengunjung.nama);
+    println!("USIA : {}", pengunjung.usia);
 }
 
 
