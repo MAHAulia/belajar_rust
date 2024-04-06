@@ -1,4 +1,4 @@
-use crate::util::str_to_uppercase;
+use util::str_to_uppercase;
 
 mod util;
 
@@ -257,6 +257,7 @@ fn main() {
 
     // utility::test_private(); // ini error karenamanggil private function
 
+    utility::counter::call_test();
 }
 
 
@@ -287,6 +288,12 @@ mod utility {
     }
 
     pub mod counter {
+        use super::test_private;
+
+        pub fn call_test() {
+            test_private();
+        }
+
         pub fn increament(var: i32){
             println!("INCREMENT >> {}", var + 1);
         }
