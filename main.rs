@@ -105,6 +105,18 @@ fn main() {
     println!("xx is greater/equal to yy : {}", xx >= yy);
     println!("xx is less/equal to yy : {}", xx <= yy);
     println!("xx is completelyy equal to yy : {}", xx == yy);
+
+    // Array
+    let mut arr: [i32; 4] = [8; 4];
+    arr[1] = 10;
+    arr[2] = 20;
+    print!("0 =>{}, 1 =>{}, 2 =>{}, 3 =>{} ", arr[0], arr[1], arr[2], arr[3]);
+
+    let mut arr2: [f32; 4] = [0.1, 0.2, 0.3, 0.4];
+    arr2[2] = 10.5;
+    print!("0 =>{}, 1 =>{}, 2 =>{}, 3 =>{} ", arr2[0], arr2[1], arr2[2], arr2[3]);
+
+    
 }
 
 
