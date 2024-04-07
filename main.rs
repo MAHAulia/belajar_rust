@@ -1,5 +1,9 @@
 use util::str_to_uppercase;
 
+use modular::{add, greet};
+mod ownership;
+mod modular;
+mod struct_fuction;
 mod util;
 
 // consts didefiniskan di luar main
@@ -316,9 +320,9 @@ fn main() {
     println!("Wide of Square>> {}", obj2.wide());
 
     // Drop, fungsi bawaan untuk decrement reference count, valuenya harus imutable agar bisa dikurangi
-    let football = Game{point: 1};
-    let basketball = Game{point: 2};
-    let socer = Game{point: 3};
+    let _football = Game{point: 1};
+    let _basketball = Game{point: 2};
+    let _socer = Game{point: 3};
 
     // Clousure
     let hitung = |no:i32|{no+10};
@@ -366,6 +370,46 @@ fn main() {
     23. B. i32 | bool | f64 | char
     24. C. assert!
     25.  */
+
+    println!("\n\n+====================================================+");
+    println!("+====================================================+");
+
+    // 1. Praktekkan ownership,reference,borrowing,clone,copy,scope,mutable,dangling,slice disertakan contoh deklarasi dan contoh penggunaannya sebanyak 10 contoh
+    ownership::contoh_ownership();
+    // 2. Praktekkan contoh pembuatan dan pemanggilan struct dan function sebanyak 10. (nilai:5)
+    struct_fuction::contoh_implementasi();
+    // 3. Praktekkan cara memisahkan fungsi dan memanggilnya dari file berbeda di rust. (nilai:5)
+    greet("Aulia");
+    
+    let result = add(3, 5);
+    println!("Hasil penjumlahan: {}", result);
+
+    println!("+====================================================+");
+    println!("+====================================================+");
+    /*
+    4. Praktekkan cara penggunaan dan perbedaan perintah cargo run dan cargo build, serta penjelasan setiap baris di file cargo.toml. (nilai:5)
+        - cargo run -> merupakan perintah yang digunakan untuk menjalankan kode rust
+        - cargo build -> merupakan perintah yang digunakan untuk melakukan kompilasi kode rust menjadi kode binary
+        - cargo.toml -> 
+            [package]
+            name = "belajar_rust" -> nama project
+            version = "0.1.0" -> versi rust yang digunakan
+            edition = "2021" -> edisi rust yang digunakan
+
+            # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+            [dependencies] -> daftar dependensi yang digunakan dalam aplikasi
+
+            [[bin]]
+            name = "belajar_rust" -> nama binary file saat kompilasi
+            path = "main.rs" -> entry point file rust yang akan digunakan saat menjalankan cargo run
+
+    5. Jelaskan kegunaan crates.io. (nilai:5)
+        crates.io -> merupakan repositori online yang digunakan untuk berbagi paket crates dalam pengembangan aplikasi menggunakan rust
+    6. Jelaskan perbedaan membuat library dan file utama di rust. (nilai:5)
+        library -> kumpulan fungsi yang biasanya digunakan kembali (resuse) dalam proses pengembangan aplikasi dengan menggunakan rust
+        file utama -> merupakan entry point yang berisi fungsi main yang merupakan kode yang pertama kali diekseskusi saat aplikasi/program dijalankan
+     */
     
 }
 
